@@ -1,0 +1,21 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    position: relative;
+    margin: 20px;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+@import 'head-n-nav';
+@import 'home-sec';
+@import 'sec-2';
