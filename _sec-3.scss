@@ -1,0 +1,163 @@
+// this sections div 1 has same style as divs in sec 2 so I formated tem ion sec 2 scss file
+
+.flex-div{
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flex-div-item{
+    background-color: #e8e4e4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vh;
+    transition: all 0.5s ease;
+
+    img{
+        width: 100px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .primary-text{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #000000e7;
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-div-info{
+        width: 80%;
+        font-size: 0.9rem;
+        margin-bottom: 5rem;
+        color: #000000b0;
+    }
+}
+
+.flex-div-item:nth-child(1):hover {
+    background-color: #cddecbe7;
+}
+
+.flex-div-item:nth-child(2):hover {
+    background-color: #dec8c8e7;
+}
+
+.flex-div-item:nth-child(3):hover {
+    background-color: #c1c9d8e7;
+}
+
+.quote-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 50vh;
+
+    .primary-text{
+        font-size: 2.75rem;
+        font-weight: 800;
+        padding: 4px;
+        margin: 0;
+        line-height: 2.5rem;
+    }
+
+    .secondary-text{
+        margin: 0;
+        padding: 0;
+        color: #000000e0;
+        font-size: 17px;
+        font-style: italic;
+        text-align: center;
+    }
+}
+
+.quote-list {
+    position: relative;
+    height:100px;
+    width: 100%;
+}
+
+.quote-item{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    opacity: 0.9;
+    // background-color: orange;
+}
+
+#quote-item-1 {
+    opacity: 0;
+    animation-name: slowchange;
+    animation-duration: 10s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+#quote-item-2 {
+    animation-name: slowchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.quote{
+    font-size: 20px;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+
+.quote-author{
+    font-size: 20px;
+}
+
+@keyframes slowchange{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media (max-width:800px) {
+    .flex-div{
+        flex-direction: column;
+    }
+
+    .quote-sec{
+        height: 40vh;
+
+        .primary-text{
+            font-size: 2.2rem;
+        }
+
+        .secondary-text{
+            font-size: 15px;
+        }
+    }
+
+    .quote{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .quote-author{
+        font-size: 16px;
+    }
+}

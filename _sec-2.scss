@@ -1,19 +1,20 @@
-.sec-2-div {
+.sec-2-div,.sec-3-div-1 {
     margin: 20px 0;
     display: flex;
-    height: 75vh;
+    height: auto;
     gap: 20px;
 }
 
-.sec-2-img {
+.sec-2-img,.sec-3-img-1 {
     width: 49%;
-    height: 100%;
+    height: 70vh;
     object-fit: cover;
     object-position: center;
 }
 
-.sec-2-info {
+.sec-2-info,.sec-3-info-1 {
     display: flex;
+    height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -25,6 +26,8 @@
         font-size: 45px;
         margin-bottom: 0;
         padding-bottom: 0;
+        line-height: 46px;
+        font-weight: 100;
     }
 
     h3{
@@ -37,6 +40,7 @@
     p{
         width: 70%;
         font-weight: 200;
+        color: #000000be;
     }
 
     button{
@@ -61,8 +65,14 @@
 
 .sec-2-foot{
     width: 90%;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-evenly;
+}
+
+.foot-item{
+    width: 20%;
+    text-align: center;
 }
 
 .foot-num{
@@ -76,37 +86,44 @@
 }
 
 @media (max-width:950px) {
-    .sec-2-div{
-        height: 55vh;
-    }
 
-    .sec-2-info {
+    .sec-2-info, .sec-3-info-1 {
         h2{
             font-size: 35px;
+            line-height: 37px;
         }
 
         p{
             font-size: 0.75rem;
         }
     }
+
+    .sec-2-foot{
+        flex-wrap: wrap;
+    }
+
+    .foot-item {
+        width: 50%;
+    }
 }
 
 
 @media (max-width:600px) {
 
-    .sec-2-img {
+    .sec-2-img,.sec-3-img-1 {
         width: auto;
     }
 
     #sec-2-img-1{
         width: 0;
+        height: 0;
     }
 
-    .sec-2-div{
+    .sec-2-div,.sec-3-div-1{
         flex-direction: column;
     }
 
-    .sec-2-info{
+    .sec-2-info, .sec-3-info-1{
         gap: 0;
         padding-bottom: 1rem;
     }

@@ -153,3 +153,9 @@ nav{
         display: block;
     }
 }
+
+@media (max-width:800px) {
+    footer{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,18 @@
+.big-img-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000ad;
+    display: none;
+}
+
+img.big-img{
+    width:100%;
+    max-width: 900px;
+}
+
+img.small-img{
+    width: 100px;
+}
